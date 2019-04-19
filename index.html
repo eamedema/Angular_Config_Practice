@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MySite">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Eric's Portfolio </title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body>
+
+  <section>
+    <header>
+        <h1>Eric Medema</h1>
+        <nav>
+            <ul>
+                <li><a href="#!/home">Home</a></li>
+                <li><a href="#!/about-me">About Me</a></li>
+                <li><a href="#!/portfolio">Portfolio</a></li>
+                <li><a href="#!/resume">Resume</a></li>
+            </ul>   
+        </nav>
+    </header>   
+
+    <main id="views" ng-view></main>
+
+  </section>
+
+  <script src="https://code.angularjs.org/1.7.8/angular.js"></script>
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
+
+  <script src="components/about-me/aboutMe.js"></script>
+  <script src="components/home/home.js"></script>
+  <script src="components/portfolio/portfolio.js"></script>
+  <script src="components/resume/resume.js"></script>
+
+  <script src="https://code.angularjs.org/1.7.8/angular-route.js"></script>
+</body>
+</html>
